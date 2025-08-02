@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Channel YouTube Saya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+      background: #000;
+      overflow-x: hidden;
+    }
+
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.ibb.co/Yf1LxTK/stars.gif') repeat;
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(4px);
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 50px;
+      color: #00ffe1;
+    }
+
+    .channel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 30px 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+      transition: 0.3s;
+      backdrop-filter: blur(8px);
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #00ffe1;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .channel-name {
+      font-size: 1.6em;
+      color: #00ffe1;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 1em;
+      margin-bottom: 20px;
+      opacity: 0.85;
+    }
+
+    .btn {
+      background: #ff0000;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1em;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #cc0000;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="stars"></div>
+  <div class="overlay"></div>
+
+  <div class="container">
+    <h1>Channel YouTube Saya</h1>
+    <div class="channel-grid">
+
+      <!-- Cerita Awal -->
+      <div class="card">
+        <img class="avatar" src="https://yt3.googleusercontent.com/ytc/APkrFKaKH6SbbO6YTDY3GOv4NmNvbIh1QoCCuE8g43sj6A=s176-c-k-c0x00ffffff-no-rj" alt="Cerita Awal" />
+        <div class="channel-name">Cerita Awal</div>
+        <p class="description">Channel berisi cerita menarik, unik, dan inspiratif dari berbagai belahan dunia. Jangan lupa subscribe!</p>
+        <a class="btn" href="https://www.youtube.com/@Ceritaawal1" target="_blank">🎥 Subscribe</a>
+      </div>
+
+      <!-- Cahyaniff -->
+      <div class="card">
+        <img class="avatar" src="https://yt3.googleusercontent.com/ytc/APkrFKZ2-8zF1aeEGHDdBCmTrzQEkZ2FYrcTv3_GZAI2=s176-c-k-c0x00ffffff-no-rj" alt="Cahyaniff" />
+        <div class="channel-name">Cahyaniff</div>
+        <p class="description">Channel Cahyaniff menyajikan konten vlog, eksplorasi, dan hiburan ringan untuk semua kalangan.</p>
+        <a class="btn" href="https://www.youtube.com/@cahyaniff" target="_blank">🎥 Subscribe</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Cerita Awal & Cahyaniff | All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
